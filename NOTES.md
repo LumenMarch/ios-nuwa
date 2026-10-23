@@ -1,4 +1,24 @@
-# iOS 16 on sweet (Redmi Note 10 Pro, SM7150) - working notes
+# ios-nuwa notes
+
+## ios-nuwa handoff (2026-10-23)
+
+- Repository: `LumenMarch/ios-nuwa`, a fork of `dipa-studio/ios-sweet` (MIT).
+  Target: Xiaomi 13 Pro (`nuwa`, SM8550), iOS 16.7.16 / iPhone X userland.
+- State: the code tree is still ios-sweet's `sweet` / SM7150 code. No nuwa
+  loader, ADT, machine config or driver exists yet. It does not boot on a
+  13 Pro. See `docs/STATUS.md`.
+- Done in this fork: new README, `docs/STATUS.md`, `docs/PORTING.md`,
+  `NOTICE.md`, updated `AGENTS.md`; original README and notes kept as
+  `docs/sweet-readme.md` and `docs/sweet-notes.md`.
+- Next: stage 0 board inventory — dump the live FDT, `/proc/iomem`, GPT and
+  stock `boot.img` from the phone; record the measured values in
+  `docs/STATUS.md`. Then decide whether to import the SM8550 layer from
+  `ios-fuxi` or write it here.
+- Everything below this section is ios-sweet's original log (`sweet`,
+  SM7150). It is kept for method and history; its board values do not apply
+  to nuwa.
+
+# iOS 16 on sweet (Redmi Note 10 Pro, SM7150) - inherited working notes
 
 ## Agent handoff / active work (2026-10-15, latest)
 
